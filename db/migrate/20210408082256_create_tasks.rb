@@ -2,8 +2,10 @@ class CreateTasks < ActiveRecord::Migration[5.2]
   def change
     create_table :tasks do |t|
       t.string :content
-
+      
       t.timestamps
     end
   end
 end
+
+#ここでtaskを発言したユーザを特定できる
